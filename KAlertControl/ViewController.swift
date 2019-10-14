@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import KCustomAlert
 
 class ViewController: UIViewController {
 
@@ -15,6 +16,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func alertAction(_ sender: Any) {
+        self.showCustomAlertWith(message: "test Masg", descMsg: "", itemimage: nil, actions: nil)
+    }
+    
 }
 

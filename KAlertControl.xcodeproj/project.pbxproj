@@ -12,16 +12,50 @@
 		589213422354C75F0078F683 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 589213402354C75F0078F683 /* Main.storyboard */; };
 		589213442354C7610078F683 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 589213432354C7610078F683 /* Assets.xcassets */; };
 		589213472354C7610078F683 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 589213452354C7610078F683 /* LaunchScreen.storyboard */; };
+		589213932354CE130078F683 /* KCustomAlert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 589213922354CD6C0078F683 /* KCustomAlert.framework */; };
+		589213942354CE130078F683 /* KCustomAlert.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 589213922354CD6C0078F683 /* KCustomAlert.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		589213912354CD6C0078F683 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5892138D2354CD6C0078F683 /* KCustomAlert.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 589213732354CCE10078F683;
+			remoteInfo = KCustomAlert;
+		};
+		589213952354CE130078F683 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5892138D2354CD6C0078F683 /* KCustomAlert.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 589213722354CCE10078F683;
+			remoteInfo = KCustomAlert;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		589213972354CE130078F683 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				589213942354CE130078F683 /* KCustomAlert.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		589213392354C75F0078F683 /* KCustomAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KCustomAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		589213392354C75F0078F683 /* KAlertControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KAlertControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5892133C2354C75F0078F683 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5892133E2354C75F0078F683 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		589213412354C75F0078F683 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		589213432354C7610078F683 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		589213462354C7610078F683 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		589213482354C7610078F683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5892138D2354CD6C0078F683 /* KCustomAlert.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KCustomAlert.xcodeproj; path = ../KCustomAlert/KCustomAlert.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				589213932354CE130078F683 /* KCustomAlert.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,7 +73,8 @@
 		589213302354C75F0078F683 = {
 			isa = PBXGroup;
 			children = (
-				5892133B2354C75F0078F683 /* KCustomAlert */,
+				5892138D2354CD6C0078F683 /* KCustomAlert.xcodeproj */,
+				5892133B2354C75F0078F683 /* KAlertControl */,
 				5892133A2354C75F0078F683 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,12 +82,12 @@
 		5892133A2354C75F0078F683 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				589213392354C75F0078F683 /* KCustomAlert.app */,
+				589213392354C75F0078F683 /* KAlertControl.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5892133B2354C75F0078F683 /* KCustomAlert */ = {
+		5892133B2354C75F0078F683 /* KAlertControl */ = {
 			isa = PBXGroup;
 			children = (
 				5892133C2354C75F0078F683 /* AppDelegate.swift */,
@@ -61,27 +97,37 @@
 				589213452354C7610078F683 /* LaunchScreen.storyboard */,
 				589213482354C7610078F683 /* Info.plist */,
 			);
-			path = KCustomAlert;
+			path = KAlertControl;
+			sourceTree = "<group>";
+		};
+		5892138E2354CD6C0078F683 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				589213922354CD6C0078F683 /* KCustomAlert.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		589213382354C75F0078F683 /* KCustomAlert */ = {
+		589213382354C75F0078F683 /* KAlertControl */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5892134B2354C7610078F683 /* Build configuration list for PBXNativeTarget "KCustomAlert" */;
+			buildConfigurationList = 5892134B2354C7610078F683 /* Build configuration list for PBXNativeTarget "KAlertControl" */;
 			buildPhases = (
 				589213352354C75F0078F683 /* Sources */,
 				589213362354C75F0078F683 /* Frameworks */,
 				589213372354C75F0078F683 /* Resources */,
+				589213972354CE130078F683 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				589213962354CE130078F683 /* PBXTargetDependency */,
 			);
-			name = KCustomAlert;
+			name = KAlertControl;
 			productName = KCustomAlert;
-			productReference = 589213392354C75F0078F683 /* KCustomAlert.app */;
+			productReference = 589213392354C75F0078F683 /* KAlertControl.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -99,7 +145,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 589213342354C75F0078F683 /* Build configuration list for PBXProject "KCustomAlert" */;
+			buildConfigurationList = 589213342354C75F0078F683 /* Build configuration list for PBXProject "KAlertControl" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,12 +156,28 @@
 			mainGroup = 589213302354C75F0078F683;
 			productRefGroup = 5892133A2354C75F0078F683 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 5892138E2354CD6C0078F683 /* Products */;
+					ProjectRef = 5892138D2354CD6C0078F683 /* KCustomAlert.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
-				589213382354C75F0078F683 /* KCustomAlert */,
+				589213382354C75F0078F683 /* KAlertControl */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		589213922354CD6C0078F683 /* KCustomAlert.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = KCustomAlert.framework;
+			remoteRef = 589213912354CD6C0078F683 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		589213372354C75F0078F683 /* Resources */ = {
@@ -141,6 +203,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		589213962354CE130078F683 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KCustomAlert;
+			targetProxy = 589213952354CE130078F683 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		589213402354C75F0078F683 /* Main.storyboard */ = {
@@ -281,15 +351,18 @@
 		5892134C2354C7610078F683 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = KCustomAlert/Info.plist;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/KAlertControl/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.innorap.KCustomAlert;
+				PRODUCT_BUNDLE_IDENTIFIER = com.innorap.KAlertControl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -298,15 +371,18 @@
 		5892134D2354C7610078F683 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = KCustomAlert/Info.plist;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/KAlertControl/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.innorap.KCustomAlert;
+				PRODUCT_BUNDLE_IDENTIFIER = com.innorap.KAlertControl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -315,7 +391,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		589213342354C75F0078F683 /* Build configuration list for PBXProject "KCustomAlert" */ = {
+		589213342354C75F0078F683 /* Build configuration list for PBXProject "KAlertControl" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				589213492354C7610078F683 /* Debug */,
@@ -324,7 +400,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5892134B2354C7610078F683 /* Build configuration list for PBXNativeTarget "KCustomAlert" */ = {
+		5892134B2354C7610078F683 /* Build configuration list for PBXNativeTarget "KAlertControl" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5892134C2354C7610078F683 /* Debug */,
